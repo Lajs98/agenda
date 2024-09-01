@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Lista de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/agendaPrincipal.png" alt="AgendaLi">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="FormLista">
+            <label for="NomeColab">
+                <h2>Nome:</h2>
+            </label>
+            <input type="text" id="NomeColab" required placeholder="Nome colaborador">
+            
+            <label for="telMovelColab">
+                <h2>Telefone:</h2>
+            </label>
+            <input type="tel" id="telMovelColab" required placeholder="Telefone colaborador">
+            
+            <div class="opcao">
+                <input type="radio" id="cel" name="celtel" required value="cel">
+                <img src="./img/movelPrincipal.png" alt="Celular">
+                <label for="cel">Móvel</label>
+                
+                <input type="radio" id="tel" name="celtel" required value="tel">
+                <img src="./img/fixoPrincipal.png" alt="Fixo">
+                <label for="tel">Fixo</label>
+            </div>
+
+            <label for="emailColab">
+                <h2>E-mail:</h2>
+            </label>
+            <input type="email" id="emailColab" required placeholder="E-mail colaborador">
+            
+            <button type="submit">Adicionar</button>
+        </form>
+        <h1>Lista de Contatos</h1>
+        <div class="tabela">
+            <table id="tablebody" cellspacing="0">
+                <thead>
+                    <tr class="lista">
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- area do JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
